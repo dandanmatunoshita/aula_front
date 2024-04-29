@@ -1,5 +1,8 @@
+import Link from "next/link";
 // import Image from "next/image";
 import styles from "./page.module.css";
+import PageHome from "./home/page";
+
 
 export default function Home() {
   return (
@@ -12,6 +15,9 @@ export default function Home() {
       <div>
         Pudim
       </div>
+      <p><Link href={'login'}>login</Link> </p>
+      <p><Link href={'home'}>home</Link> </p>
+      <div><PageHome /></div>
     </main>
   );
 }
